@@ -100,7 +100,7 @@ class PdfHelperDMEExam extends Dompdf
                     }
                     else{
                         $base_url =  "http://" . $_SERVER['SERVER_NAME'];
-                        $local_path =  $base_url ."/projects/sscsr/site/";
+                        $local_path =  $base_url ."/projects/site/";
                         $photo_path =  $local_path."exam_assets/photo_not_exists.png";
                              
                        }

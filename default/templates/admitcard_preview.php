@@ -136,7 +136,11 @@ $base_url =  "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 									</div>
 							  <label for="exampleInputEmail1">Date of Birth</label>
-							  <input type="date" class="form-control" placeholder="DOB " name="dob" required="" id = "password" autocomplete="off"/>  
+							  <input type="date" class="form-control" placeholder="DOB " name="dob" 
+							  required="" id = "password" autocomplete="off"  min ="1980-01-01" max="2005-01-01"/> 
+
+
+
 							 
 							  <br>
 							  <button class="btn btn-lg btn-sscsrthemecolor btn-block" type="submit" name="admit_card">Preview</button>   

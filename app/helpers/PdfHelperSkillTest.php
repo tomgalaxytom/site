@@ -343,10 +343,10 @@ class PdfHelperSkillTest extends Dompdf
       // echo $mark1."<br>";
 
       $qrcode_value = "RollNo=" .$value4.","."Name=".$value9.","."DOB=" .$date;
-      $qrcode =  '<img  style="width:70px;height:60px;" src="'.(new \chillerlan\QRCode\QRCode)->render( $qrcode_value).'" alt="QR Code" />';
+      $qrcode =  '<img  style="width:70px;height:60px;padding-top:20px" src="'.(new \chillerlan\QRCode\QRCode)->render( $qrcode_value).'" alt="QR Code" />';
 
       $barcode_Value ='RollNo='.$value4;
-      $barcode =  '<img  width="60%" style="padding-bottom:10px;height:50px" src="data:image/png;base64,' . base64_encode($generator->getBarcode($barcode_Value, $generator::TYPE_CODE_128,3,50)) . '">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+      $barcode =  '<img  width="60%" style="padding-top:20px;height:50px" src="data:image/png;base64,' . base64_encode($generator->getBarcode($barcode_Value, $generator::TYPE_CODE_128,3,50)) . '">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
 
         $output = '
         <style>
